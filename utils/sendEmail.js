@@ -15,7 +15,7 @@ const mailOptions = {
     from : process.env.SMTP_MAIL,
     to : options.email,
     subject : options.subject,
-    text : options.message+"\n\n Email of user who sent the message : "+options.userEmail
+    text : options.message+"\n\n Ye le bhai tera email : "+options.userEmail+" \n Aur kch ? , OTP , passkey , pizza , burger ? "
 }
 await transporter.sendMail(mailOptions);
 }
