@@ -55,6 +55,4 @@ router.post("/send/mail", async (req,res,next)=>{
 
 app.use(router);  //Middleware for router
 
-app.listen(process.env.PORT,()=>{
-    console.log ('Server listening at port '+process.env.PORT);
-});
+export default app;
